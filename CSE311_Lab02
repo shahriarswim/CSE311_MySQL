@@ -104,7 +104,7 @@ SELECT * FROM Jobs;
 
 -- Activity 01
 
-SELECT Last_Name, Salary/7 AS 'Weekly_Salary', Department_Id
+SELECT Last_Name, ROUND((Salary*7)/30, 2) AS 'Weekly_Salary', Department_Id
 FROM Employees;
 
 -- Activity 02
